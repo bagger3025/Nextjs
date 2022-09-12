@@ -62,3 +62,10 @@
     3. styled jsx global -- 하위 컴포넌트에도 적용됨
 - Custom App Component
     - 페이지를 렌더링할 때마다 사용하는 파일
+
+# 2. Practice Project
+
+## 2-0. Patterns
+- Layout Pattern
+    - components 파일에 `Layout.js` 파일을 만들어서 패턴을 저장
+    - `children` prop은 react.js가 제공하는 것 -- 하나의 컴포넌트를 다른 컴포넌트 안에 넣을 때 사용할 수 있음
