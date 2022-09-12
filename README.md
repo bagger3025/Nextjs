@@ -118,3 +118,10 @@
     - `/movies`도 갖고 싶다면? -- `/movies/index.js`를 만들면 됨
 - `[id].js`와 같은 형식을 통해 주소의 id를 받아올 수 있음
 - `useRouter`의 `query`를 통해 id를 받아올 수 있음
+
+## 2-6. Movie Detail
+- Router Hook
+    - `router.push("[Link]");` => Link 주소로 이동함
+- URL에 정보를 숨겨 보낼 수 있음
+    - `router.push({pathname: "", query: {}}, "")`
+    - 두 번째 파라미터인 as를 통해 사용자에게 보여지는 url을 바꿀 수 있음
