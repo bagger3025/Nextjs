@@ -24,3 +24,10 @@
     - `Link`를 이용해 클라이언트 측 네비게이션을 할 수 있음
     - `Link`는 `href`를 위한 것일 뿐, `color`나 `className` 같은 것들은 `a` 태그에 넣음
 - `useRouter` hook을 사용해 위치에 따른 작업을 할 수 있음
+
+## 1-4. CSS Modules
+- `.module.css` 파일의 이름은 상관없지만 끝의 `.module.css`는 중요함
+- `.module.css` 파일을 import 해서 className으로 넣으면 style을 입힐 수 있음
+- className은 공백으로 구분하여 문자열로 넣어주면 됨
+    - 백틱을 이용하여 문자열로 만들기
+    - 배열로 만들어 join 메서드를 이용하기
