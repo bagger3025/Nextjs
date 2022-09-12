@@ -111,3 +111,10 @@
     - 컴포넌트의 매개변수로 props를 받을 수 있음
     
 ## 2-4. Recap
+
+## 2-5. Dynamic Routes
+- `/movies/all`로 접속한다면?
+    - `/movies/all.js`를 실행함
+    - `/movies`도 갖고 싶다면? -- `/movies/index.js`를 만들면 됨
+- `[id].js`와 같은 형식을 통해 주소의 id를 받아올 수 있음
+- `useRouter`의 `query`를 통해 id를 받아올 수 있음
