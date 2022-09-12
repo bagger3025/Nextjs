@@ -72,3 +72,33 @@
 
 ## 2-1. Fetching Data
 - public file은 public 디렉터리에 넣고 `/`로 찾아가면 됨
+
+## 2-2. Rediret and Rewrite
+- redirection
+    - `next.config.js`에 
+        ```javascript
+        async redirects(){
+            return [
+                {
+                    source: "/contact",
+                    destination: "/form",
+                    permanent: false
+                }, {
+                    source: "/old-blog/:path*",
+                    destination: "/new-blog/:path*",
+                    permanent: false
+                }
+            ]
+        }
+        ```
+    - 내부 url로든, 외부 url로든 redirect시킬 수 있음
+    - `rewrites`는 `redirects`와 같이 경로를 바꿔주지만 유저가 알 수 없게 바꿔줌
+        ```javascript
+        async rewrites(){
+            return [{
+                source: "/api/movies",
+                destination: `https://~/popular?api_key=${process.env.API_KEY}`,
+                permanent: false
+            }]
+        }
+        ```
