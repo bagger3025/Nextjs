@@ -44,3 +44,21 @@
     - `Component`는 `js`파일의 Component를 넣어준다.
 - `_app.js`는 기본적으로 `return <Component {...pageProps} />`를 기본으로 갖는다.
 - `globals.css`는 커스텀앱에서만 import할 수 있다.
+
+## 1-7. Recap
+- Library vs. Framework
+    - Library: 개발자가 라이브러리 코드를 호출함
+    - Framework: 프레임워크가 개발자 코드를 호출함
+- Nextjs vs. create-react-app
+    - create-react-app: Client Side Rendering
+    - Nextjs: Pre Rendered
+- Rehydration
+    - Nextjs가 backend에서 React.js를 돌려서 페이지를 pre-generate함
+    - 그 결과 만들어진 html페이지를 유저가 받음
+    - 유저가 자바스크립트 파일을 다운받고나면 ReactJS가 다시 동작함
+- CSS Module
+    1. module 파일을 만들어 import (xxx.module.css)
+    2. styled jsx -- 일반 html 태그에 jsx prop을 넣어 사용, 컴포넌트에 한정해 적용됨
+    3. styled jsx global -- 하위 컴포넌트에도 적용됨
+- Custom App Component
+    - 페이지를 렌더링할 때마다 사용하는 파일
