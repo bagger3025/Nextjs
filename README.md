@@ -37,3 +37,10 @@
 - 클래스 이름뿐 아니라 tag 이름으로도 스타일을 지정할 수 있음
 - `styles.list`로 className을 넣어야 했던 반면, `list`로만 className을 넣어주면 작동함
 - 백틱을 이용한 문자열이기 때문에 `${}`로 값을 넣어줄 수 있음
+
+## 1-6. Custom App
+- Next.js는 렌더링하기 전, `_app.js`를 먼저 렌더링한다. 반드시 `_app.js`여야 한다.
+- `{Component, pageProps}`를 매개변수로 갖는다.
+    - `Component`는 `js`파일의 Component를 넣어준다.
+- `_app.js`는 기본적으로 `return <Component {...pageProps} />`를 기본으로 갖는다.
+- `globals.css`는 커스텀앱에서만 import할 수 있다.
