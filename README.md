@@ -130,3 +130,6 @@
 - 파일 이름을 `[...params].js`로 하면 뒤에 오는 모든 것을 다 받을 수 있음
 - `router.query.params`는 서버에 없으므로 `router.query.params || []`를 해야 에러가 안 남
 - 파일 이름을 `[...params].js`라고 했으므로 `router.query`에 `params` 항목이 있음
+
+## 2-8. 404 Pages
+- `404.js`로 하면 커스텀 페이지를 만들 수 있음
