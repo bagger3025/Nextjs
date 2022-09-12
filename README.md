@@ -69,3 +69,6 @@
 - Layout Pattern
     - components 파일에 `Layout.js` 파일을 만들어서 패턴을 저장
     - `children` prop은 react.js가 제공하는 것 -- 하나의 컴포넌트를 다른 컴포넌트 안에 넣을 때 사용할 수 있음
+
+## 2-1. Fetching Data
+- public file은 public 디렉터리에 넣고 `/`로 찾아가면 됨
