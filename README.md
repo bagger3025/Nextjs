@@ -125,3 +125,8 @@
 - URL에 정보를 숨겨 보낼 수 있음
     - `router.push({pathname: "", query: {}}, "")`
     - 두 번째 파라미터인 as를 통해 사용자에게 보여지는 url을 바꿀 수 있음
+
+## 2-7. Catch All
+- 파일 이름을 `[...params].js`로 하면 뒤에 오는 모든 것을 다 받을 수 있음
+- `router.query.params`는 서버에 없으므로 `router.query.params || []`를 해야 에러가 안 남
+- 파일 이름을 `[...params].js`라고 했으므로 `router.query`에 `params` 항목이 있음
