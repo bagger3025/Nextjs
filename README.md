@@ -102,3 +102,10 @@
             }]
         }
         ```
+
+## 2-3. Server Side Rendering
+- `getServerSideProps`: 반드시 이름은 그대로
+    - 서버 안에서만 작동하는 코드임
+    - API_KEY를 여기에 숨겨도 좋음
+    - props를 키로하는 object를 반환함
+    - 컴포넌트의 매개변수로 props를 받을 수 있음
