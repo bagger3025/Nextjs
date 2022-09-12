@@ -17,3 +17,10 @@
     - 이럴 경우 연결이 느리다면 javascript를 다 받아와서 UI가 렌더링 될 때까지 하얀 화면으로 보임
 - Hidration
     - 정적 렌더링된 html 페이지를 react.js가 넘겨받아 react.js로 작동함
+    
+## 1-3. Routing
+- `a` 태그의 `href` 태그를 이용하면 이동할 때 전체 애플리케이션이 다시 로드됨
+    - 매우 느려짐
+    - `Link`를 이용해 클라이언트 측 네비게이션을 할 수 있음
+    - `Link`는 `href`를 위한 것일 뿐, `color`나 `className` 같은 것들은 `a` 태그에 넣음
+- `useRouter` hook을 사용해 위치에 따른 작업을 할 수 있음
